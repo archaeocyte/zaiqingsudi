@@ -1,0 +1,48 @@
+.typeBlock {
+	background-color: #FFFFFF;
+	width: 400rpx;
+	height: 400rpx;
+	margin: 20rpx;
+}
+.typeBlock image {
+	height: 60%;
+	width: 80%;
+}
+.typeBlock text {
+	margin-top: 80%;
+
+}
+
+.weui-grids{
+	margin: 0 4%;
+	overflow:hidden
+}
+.weui-grid{
+	background-color:#ffffff;
+	position:relative;
+	float:left;
+	padding:20px 10px;
+	margin: 2% 5%;
+	width:40%;
+	box-sizing:border-box;
+	border:1rpx solid #ececec;
+}
+.weui-grid_active{
+	background-color:#ececec
+}
+.weui-grid__icon{
+	display:block;
+	width:80px;
+	height:60px;
+	margin:0 auto
+}
+.weui-grid__label{
+	margin-top:5px;
+	display:block;
+	text-align:center;
+	color:#000;
+	font-size:14px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden
+}

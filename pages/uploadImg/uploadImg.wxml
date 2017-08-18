@@ -1,0 +1,25 @@
+<import src="../common/header.wxml" />
+<import src="../common/footer.wxml" />
+
+<view class="container">
+  
+  <view class="page-body">
+    <view class="page-body-wrapper">
+      <form bindsubmit="openLocation">
+        
+        <view class="images-wrapper">
+          <text class="images-text">请选择图片</text>
+          <view class="images-list">
+            <block wx:for-items="{{imageList}}" wx:for-item="image">
+              <image src="{{image}}" class="images-image" data-src="{{image}}" bindtap="previewImage"></image>
+            </block>
+            <image src="/image/plus.png" class="{{plusClass}}" bindtap="chooseImage"></image>
+          </view>
+        </view>
+      </form>
+      <button bindtap="uploadImage">上传图片</button>
+    </view>
+  </view>
+
+  
+</view>

@@ -1,0 +1,32 @@
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">灾情调查问卷</text>
+    </view>
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+
+          
+
+          <block wx:for="{{autoQuestions}}" wx:for-item="question" wx:key="*this">
+            <view class="section">
+                <view class="section__title">{{index + 1}}. {{question.Content}}</view>
+                <input wx:if="{{question.Type=='string'}}" name = "{{index}}" placeholder="{{question.Discription}}" />
+                <input wx:if="{{question.Type=='integer'}}" type="number" name = "{{index}}" placeholder="{{question.Discription}}" />
+                <input wx:if="{{question.Type=='float'}}" type="digit" name = "{{index}}" placeholder="{{question.Discription}}" />
+                <checkbox-group name = "{{index}}" wx:if="{{question.Type=='multiChoice'}}" class="checkbox-group" bindchange="checkboxChange">
+                  <label class="radio" wx:for="{{question.Choices}}">
+                    <checkbox value="{{index}}"/>{{item}}
+                  </label>
+                </checkbox-group>
+                <radio-group name = "{{index}}" wx:if="{{question.Type=='singleChoice'}}" class="radio-group" bindchange="radioChange">
+                  <label class="radio" wx:for="{{question.Choices}}">
+                    <radio value="{{index}}"/>{{item}}
+                  </label>
+                </radio-group>
+            </view>
+          </block>
+
+          <view class="btn-area">
+              <button class = "button" formType="submit" style="background-color:#0bb20c;color:#ffffff">提交</button>
+          </view>
+    </form>
+</view>

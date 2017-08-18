@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/chooseType/chooseType",
+    "pages/index/index",
+    "pages/map/map",
+    "pages/uploadImg/uploadImg",
+    "pages/submitSuccess/submitSuccess",
+    "pages/questions/questions",
+    "pages/chooseLocation/chooseLocation"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "灾情速递",
+    "navigationBarTextStyle": "black",
+
+    "navigationBarBackgroundColor": "#F60",
+    "navigationBarTextStyle": "white"
+  }
+
+}
+

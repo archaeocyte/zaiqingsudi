@@ -1,0 +1,7 @@
+.thanks-info {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+  align-items: center;
+  margin-top: 100rpx;
+}
